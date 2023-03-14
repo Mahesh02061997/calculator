@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        transition: 1s;
+    }
+    body{
+        background: linear-gradient(90deg,rgb(0, 81, 255),hotpink);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: rgb(216, 173, 173);
+    }
+    #container{
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+        border-left: 2px solid black;
+        border-top: 5px solid black;
+        border-right: 7px solid black;
+        border-bottom: 8px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 5px 7px rebeccapurple,-2px -5px 7px red;
+
+        position: relative;
+
+        left: 40%;
+        top: 200px;
+    }
+    #a{
+        position: absolute;
+        left: 30px;
+        top: 80px;
+        zoom: 125%;
+        font-family: sans-serif;
+    }
+    #b{
+        position: absolute;
+        left: 40px;
+        top: 150px;
+        zoom: 125%;
+        font-family: sans-serif;
+    }
+    #btn{
+        width: 150px;
+        height: 35px;
+        position: absolute;
+        left: 140px;
+        top: 275px;
+        font-family: sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        
+    }
+    #container:hover{
+        background-color: rgb(10, 255, 255);
+        border-radius: 12px;
+        border-left: 5px solid black;
+        border-top: 7px solid black;
+        border-right: 2px solid black ;
+        border-bottom: 2px solid black;
+        box-shadow:2px 5px 7px red,-5px -5px 7px rebeccapurple;
+        /* transition: 1s; */
+    }
+    #btn:hover{
+        border-left: 6px solid silver;
+        border-top: 4px solid silver;
+        border-right: 6px solid maroon;
+        border-bottom: 4px solid maroon;
+        background-color: rgb(232, 39, 216);
+        box-shadow: 2px 5px 8px black;
+        font-style: italic;
+        letter-spacing: 4px;
+        /* transition: 1s; */
+    }
+    #user{
+        width: 180px;
+        height: 20px;
+        letter-spacing: 1px;
+        /* border: none; */
+        outline: none;
+    }
+    #pass{
+        width: 180px;
+        height: 20px;
+        letter-spacing: 1px;
+        outline: none;
+    }
+    #user:hover{
+        width: 185px;
+        height: 25px;
+        border: 2px solid goldenrod;
+        letter-spacing: 2px;
+        /* transition: 1s; */
+        border-radius: 5px;
+        box-shadow: 2px 4px 6px black;
+        
+    }
+    #pass:hover{
+        width: 185px;
+        height: 25px;
+        border: 2px solid goldenrod;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        box-shadow: 2px 4px 6px black;
+    }
+   </style>
+</head>
+<body>
+    
+    
+    <div id="container">
+        <h1 style="text-align: center;margin: 15px;color: dimgray;text-shadow: 0px 5px 5px;">Login Form</h1>
+        <div id="a">
+            <label for="user">User Name</label>
+            <input id="user" type="text" name="user" placeholder="Enter user name">
+        </div>
+        <div id="b">
+            <label for="pass">Password</label>
+            <input id="pass" type="password" name="pass" placeholder="Enter password" required>
+        </div>
+        <button id="btn">Login</button>
+    </div>
+
+</body>
+</html>
